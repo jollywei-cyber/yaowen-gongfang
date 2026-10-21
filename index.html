@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#23406B">
+<meta name="description" content="瑶纹工坊——瑶族刺绣纹样数字化保护与可控创意创作平台">
+<title>瑶纹工坊 · 瑶绣纹样数字基因库</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%2323406B'/%3E%3Cpath d='M20 6 32 13v14L20 34 8 27V13z' fill='none' stroke='%23F6F0E3' stroke-width='2.6' stroke-linejoin='round'/%3E%3Ccircle cx='20' cy='20' r='3' fill='%23F6F0E3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <!-- 桌面端侧边导航 -->
+  <aside id="sidebar" class="sidebar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34"><g fill="none" stroke="#F6F0E3" stroke-width="2.4" stroke-linejoin="round"><path d="M20 3 33 11v18L20 37 7 29V11z"/><path d="M20 11 27 15.5v9L20 29 13 24.5v-9z"/><circle cx="20" cy="20" r="2.6" fill="#F6F0E3" stroke="none"/></g></svg>
+      </span>
+      <div class="brand-text">
+        <strong>瑶纹工坊</strong>
+        <small>YAO PATTERN WORKSHOP</small>
+      </div>
+    </div>
+    <nav class="side-nav" id="sideNav"></nav>
+    <div class="side-foot">纹样分级管控 · 交互即传承</div>
+  </aside>
+
+  <!-- 主内容区 -->
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-title">
+        <span class="topbar-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="22" height="22"><g fill="none" stroke="#F6F0E3" stroke-width="2.6" stroke-linejoin="round"><path d="M20 3 33 11v18L20 37 7 29V11z"/><circle cx="20" cy="20" r="2.8" fill="#F6F0E3" stroke="none"/></g></svg>
+        </span>
+        <span id="pageTitle">纹样基因库</span>
+      </div>
+      <div id="topbarActions" class="topbar-actions"></div>
+    </header>
+    <main id="view" class="view" tabindex="-1"></main>
+  </div>
+
+  <!-- 移动端底部 Tab -->
+  <nav class="tabbar" id="tabbar"></nav>
+</div>
+
+<div id="toastWrap" class="toast-wrap" aria-live="polite"></div>
+<div id="loading" class="loading" hidden>
+  <div class="loading-box">
+    <div class="loading-yao"><svg viewBox="0 0 40 40" width="40" height="40"><g fill="none" stroke="#F6F0E3" stroke-width="2.6"><path d="M20 3 33 11v18L20 37 7 29V11z"/></g></svg></div>
+    <div id="loadingText">加载中…</div>
+    <div class="loading-bar"><i id="loadingBar"></i></div>
+  </div>
+</div>
+<div id="modalWrap" class="modal-wrap" hidden></div>
+<div id="errlog" hidden></div>
+
+<script src="js/core.js"></script>
+<script src="js/gene-images.js"></script>
+<script src="js/genes.js"></script>
+<script src="js/mod-gene.js"></script>
+</body>
+</html>
